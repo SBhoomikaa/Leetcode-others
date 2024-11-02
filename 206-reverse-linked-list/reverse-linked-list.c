@@ -14,7 +14,7 @@ struct ListNode* reverseList(struct ListNode* head) {//recursion
     head->next->next=head;
     head->next=NULL;
 
-   /* struct ListNode *p;
+   /* struct ListNode *p; //iteration
     struct ListNode *q;
     struct ListNode *r=NULL;
     p=head;
