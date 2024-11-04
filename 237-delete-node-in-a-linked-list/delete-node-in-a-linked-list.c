@@ -5,6 +5,7 @@
  *     struct ListNode *next;
  * };
  */
+ //
 void deleteNode(struct ListNode* node) {
     struct ListNode *p=node,*q;
     while(p->next!=NULL){
