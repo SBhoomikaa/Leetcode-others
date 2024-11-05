@@ -1,6 +1,6 @@
 class Solution:
     def isValid(self, s: str) -> bool:
-        stack=[]#
+        stack=[]##
         top=-1
         i=0
         for i in range(0,len(s)):
