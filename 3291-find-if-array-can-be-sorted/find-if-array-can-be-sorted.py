@@ -1,5 +1,7 @@
 class Solution:
     def canSortArray(self, nums: List[int]) -> bool:
+        if(nums==sorted(nums)):
+            return True
         i=0
         j=0
         n=[]
