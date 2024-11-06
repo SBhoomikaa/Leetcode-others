@@ -1,11 +1,8 @@
 class Solution:
     def canSortArray(self, nums: List[int]) -> bool:
-        if(nums==sorted(nums)):
-            return True
         i=0
         j=0
         n=[]
-        count=0
         for i in range(0,len(nums)):
             r=0
             b=""
