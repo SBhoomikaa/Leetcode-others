@@ -32,14 +32,17 @@ NODE* insertlast(NODE *p){
 NODE* assign(NODE *p,char *a){
     NODE *q=p;
     int i=strlen(a)-1,j=0;
+    printf("\n");
     while(i>=0){
         q->arr[j]=a[i]-'0';
+        printf("%d",q->arr[j]);
         i--;
         j++;
         if(j>4){
             insertlast(p);
             q=q->next;
             j=0;
+            printf("-");
         }
     }
     while(j<5){
@@ -53,7 +56,8 @@ NODE* add(NODE *p,NODE *q){
     NODE *result=NULL,*r=NULL;
     r=insertlast(r);
     result=r;
-    while(p!=NULL || q!=NULL){
+    printf("\n");
+    while(1){
         result->arr[i]=(p->arr[i]+q->arr[i])+carry;
         if(result->arr[i]>=10){
             carry=(result->arr[i])/10;
@@ -61,11 +65,15 @@ NODE* add(NODE *p,NODE *q){
             }
         else
             carry=0;    
+        printf("%d",result->arr[i]);       
         i++;
         if(i>4)
         {
             p=p->next;
             q=q->next;
+            if(p==NULL || q==NULL)
+            break;
+            printf("-");
             r=insertlast(r);
             result=result->next;
             i=0;
@@ -80,7 +88,7 @@ NODE* add(NODE *p,NODE *q){
         return r;}
     else{
         if(p!=NULL){
-        if(!carry)
+        if(carry)
         p->arr[0]=p->arr[0]+carry;
         result->next=p;}
         else{
@@ -117,8 +125,8 @@ int main() {
     NODE *num1 = NULL, *num2 = NULL, *result = NULL;
     
     // Assigning values
-    char str1[] = "987654321987654321";
-    char str2[] = "123456789123456789";
+    char str1[] = "1234567890123456789012345678901234567890123456";
+    char str2[] ="511111111111111111111111111111111111111222";
     
     num1 = assign(insertlast(num1), str1);
     num2 = assign(insertlast(num2), str2);
