@@ -3,11 +3,6 @@ class Solution:
         if(len(a)==1 or len(a)==0):
             return
         for i in range(len(a)-2,-1,-1):
-            if(i==len(a)-2 and a[i]<a[i+1]):
-                a[i],a[i+1]=a[i+1],a[i]
-                return
-            elif (i==len(a)-2):
-                continue 
             k=a[i]+100         
             m=i
             for j in range(len(a)-1,i,-1):
