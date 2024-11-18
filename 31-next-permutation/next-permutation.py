@@ -1,3 +1,4 @@
+#
 class Solution:
     def nextPermutation(self, a: List[int]) -> None:
         if(len(a)==1 or len(a)==0):
