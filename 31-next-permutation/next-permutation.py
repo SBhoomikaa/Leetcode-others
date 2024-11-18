@@ -11,8 +11,7 @@ class Solution:
                     m=j
             if(m!=i):        
                 a[m],a[i]=a[i],a[m]
-                b=sorted(a[i+1:])
-                a[i+1:]=b
+                a[i+1:]=sorted(a[i+1:])
                 return
         a.sort()
         return    
