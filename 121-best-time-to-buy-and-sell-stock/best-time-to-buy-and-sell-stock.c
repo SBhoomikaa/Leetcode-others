@@ -1,3 +1,4 @@
+//
 int maxProfit(int* prices, int pricesSize) {
     int sell=0,buy=prices[0],i,temp=prices[0],k=0;
     for(i=1;i<pricesSize;i++){
