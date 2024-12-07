@@ -3,7 +3,10 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
+        k=k%len(a)
         for i in range(0,k):
             c=a.pop()
             a.insert(0,c)
+
+
         
