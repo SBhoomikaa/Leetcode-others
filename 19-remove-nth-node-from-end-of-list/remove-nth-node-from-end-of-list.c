@@ -18,11 +18,8 @@ struct ListNode* removenode(struct ListNode *head,int *present,int target){
         free(head);
         return q;
     }
-    if(*present==(target+1)){
-        *present+=1;
+    if(*present==(target+1))
         head->next=p;
-        return head;
-    }
     *present+=1;
     return head;    
 } 
