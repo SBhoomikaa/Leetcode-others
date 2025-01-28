@@ -26,7 +26,5 @@ struct TreeNode* flat(struct TreeNode *root){
 void flatten(struct TreeNode* root) {
  if(root==NULL || (root->right==NULL && root->left==NULL))
     return;
- //flatten(root->left);
- //flatten(root->right);
-    flat(root);
+flat(root);
 }
