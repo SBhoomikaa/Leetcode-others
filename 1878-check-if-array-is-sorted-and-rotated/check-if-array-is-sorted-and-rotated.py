@@ -3,7 +3,6 @@ class Solution:
         sort=sorted(nums)
         if(nums==sort):
             return True
-        a=[]
         size=len(nums)
         i=0
         while(i<size-1):
@@ -14,8 +13,3 @@ class Solution:
                     return True
                 else:
                     return False    
-            
-        if(a==sort):
-            return True
-        else:
-            return False    
