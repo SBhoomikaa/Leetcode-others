@@ -22,7 +22,6 @@ struct TreeNode* sort(struct ListNode* head,int count){
     p->right=sort(q->next,count-c-1);
     return p;
 } 
-
 struct TreeNode* sortedListToBST(struct ListNode* head) {
     if(head==NULL)
         return NULL;
