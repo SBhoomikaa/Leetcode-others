@@ -13,7 +13,7 @@ struct TreeNode* sort(struct ListNode* head,int count){
     }
     struct ListNode *q=head;
     int c=0;
-    while(c<(count/2) && q->next!=NULL){
+    while(c<(count/2)){
         q=q->next;
         c++;
     }
