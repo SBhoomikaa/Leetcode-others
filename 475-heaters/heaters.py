@@ -2,9 +2,7 @@ class Solution:
     def findRadius(self, houses: List[int], heaters: List[int]) -> int:
         house=sorted(houses)
         heat=sorted(heaters)
-        a={}
         j=0
-        count=0
         max=0
         for i in range(0,len(house)):
             if(j<len(heat)-1):
