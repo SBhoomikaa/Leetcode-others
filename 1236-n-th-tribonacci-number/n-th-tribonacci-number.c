@@ -9,15 +9,17 @@ int tribonacci(int n) {
         dp[count]=dp[count-1]+dp[count-2]+dp[count-3];
         count++;
     }
-    return dp[n];
+    count=dp[n];
+    free(dp);
+    return count;
     }
     else{
+        free(dp);
         switch(n){
             case 0:return 0;
             case 1:return 1;
             case 2:return 1;
         }
     }
-    free(dp);
     return 0;
 }
