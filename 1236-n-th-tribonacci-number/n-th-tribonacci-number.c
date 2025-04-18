@@ -18,5 +18,6 @@ int tribonacci(int n) {
             case 2:return 1;
         }
     }
+    free(dp);
     return 0;
 }
