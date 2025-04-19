@@ -4,7 +4,7 @@ class Solution:
             return nums[0] 
         n=len(nums)    
         dp=[0]*n
-        dp[0],dp[1]=nums[0],nums[1]
+        dp[0],dp[1]=nums[0],max(nums[0],nums[1])
         if(n>2):
             dp[2]=dp[0]+nums[2]
             for i in range(3,n):
