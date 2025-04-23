@@ -1,3 +1,4 @@
+//might not work everywhere
 char* rle(char *p){
     int i=0,count,k=0,y;
     char* s=(char*)malloc((sizeof(char)*strlen(p)*2)+1);
