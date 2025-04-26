@@ -8,7 +8,4 @@ class Solution:
                 sorts[j].append(i)
             else:
                 sorts[j]=[i]
-        a=[]
-        for j in sorts:
-            a.append(sorts[j])
-        return a             
+        return list(sorts.values()) 
