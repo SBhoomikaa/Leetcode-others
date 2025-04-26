@@ -1,7 +1,6 @@
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
         a={}
-        nums.sort()
         count=1
         for i in nums:
             if i in a:
