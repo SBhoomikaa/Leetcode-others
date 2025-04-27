@@ -12,7 +12,7 @@ struct ListNode* getnode(){
     return p;
 }
 struct ListNode* mergeTwoLists(struct ListNode* l1, struct ListNode* l2) {
-    struct ListNode *p=l1,*q=l2,*r=NULL,*head=p;
+    struct ListNode *p=l1,*q=l2,*r=NULL,*head=NULL;
     if(p==NULL ||q==NULL)
         return ((p==NULL)?q:p);
     if(p->val<=q->val) head=p;
