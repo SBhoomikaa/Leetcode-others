@@ -5,9 +5,10 @@ class Solution:
         while(i<j):
             if(s[i]!=s[j]):
                 if(x==1):
-                    return 2
-                a=self.rec(s,i+1,j,1)
-                b=self.rec(s,i,j-1,1)
+                    return x+1
+                x+=1
+                a=self.rec(s,i+1,j,x)
+                b=self.rec(s,i,j-1,x)
                 return min(a,b)
             i+=1
             j-=1
@@ -18,4 +19,5 @@ class Solution:
         k=self.rec(s,0,len(s)-1,0)
         if(k==0 or k==1):
             return True
-        return False    
+        else:
+            return False    
