@@ -19,5 +19,4 @@ class Solution:
         k=self.rec(s,0,len(s)-1,0)
         if(k==0 or k==1):
             return True
-        else:
-            return False    
+        return False    
