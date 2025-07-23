@@ -5,8 +5,8 @@ class Solution:
         while(i<j):
             if(s[i]!=s[j]):
                 if(x==1):
-                    return x+1
-                x+=1
+                    return 2
+                x=1
                 a=self.rec(s,i+1,j,x)
                 b=self.rec(s,i,j-1,x)
                 return min(a,b)
