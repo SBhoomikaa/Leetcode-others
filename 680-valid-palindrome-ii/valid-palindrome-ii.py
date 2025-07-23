@@ -6,9 +6,8 @@ class Solution:
             if(s[i]!=s[j]):
                 if(x==1):
                     return 2
-                x=1
-                a=self.rec(s,i+1,j,x)
-                b=self.rec(s,i,j-1,x)
+                a=self.rec(s,i+1,j,1)
+                b=self.rec(s,i,j-1,1)
                 return min(a,b)
             i+=1
             j-=1
